@@ -144,10 +144,6 @@ sup  {
 	transform: translateY(-100%);
   }
 
-  .show {
-    transform: translateY(0); /* Show the header */
-  }
-
 .page {
     display: flex;
     width: 100%;
@@ -243,6 +239,10 @@ hr {
         border-right: none;
         border-bottom: 5px solid #111;
     }
+	
+	.show {
+    	transform: translateY(0); /* Show the header */
+  	}
 }
 
 /*——Classes*/
