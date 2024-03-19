@@ -235,7 +235,8 @@ hr {
 
 @media (max-width: 940px) {
     .page {
-        display: block
+        display: flex;
+		flex-direction: column;
 
     .cover {
         height: 100vh;
