@@ -137,8 +137,9 @@ sup  {
 	top: 0;
 	left: 0;
 	width: 100%;
+	text-align: center;
 	background-color: #333333;
-	color: #FCFCFC
+	color: pink;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 	transition: transform 0.3s ease-in-out; 
 	transform: translateY(-100%);
@@ -236,6 +237,7 @@ hr {
     .cover {
         position: unset;
         display: flex;
+		height: 100vh;
         border-right: none;
         border-bottom: 5px solid #111;
     }
