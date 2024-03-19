@@ -235,6 +235,7 @@ hr {
     .page {
         display: flex;
 		flex-direction: column;
+    }
 
     .cover {
 		position: relative;
