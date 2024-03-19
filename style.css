@@ -235,15 +235,10 @@ hr {
 
 @media (max-width: 940px) {
     .page {
-        display: flex;
-        flex-direction: column;
-		height: 100vh;
-		overflow: hidden;
-    }
+        display: block
 
     .cover {
-        display: flex;
-		flex: 1;
+        height: 100vh;
         border-right: none;
 		overflow: auto;
     }
