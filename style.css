@@ -199,6 +199,7 @@ section:last-child {
 
 .text-overlay p.credits {
     font-family: 'ABC Diatype Semi-Mono';
+	font-size: 1.2rem;
 }
 
 .text {
