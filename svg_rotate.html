@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scroll-triggered SVG Rotation</title>
+<style>
+  body {
+    height: 2000px; /* Just for demonstration, to make scrolling possible */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+  }
+
+  .svg-container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="svg-container">
+    <svg id="rotating-element" width="100" height="100" viewBox="0 0 100 100">
+      <!-- Your SVG content here -->
+      <line x1="50" y1="0" x2="50" y2="100" stroke="black" stroke-width="1"/>
+      <line x1="0" y1="50" x2="100" y2="50" stroke="black" stroke-width="1"/>
+      <circle cx="50" cy="50" r="40" fill="red" />
+    </svg>
+  </div>
+</div>  
+
+<script>
+// Get the rotating SVG element
+const rotatingElement = document.getElementById('rotating-element');
+
+// Listen for scroll event
+window.addEventListener('scroll', function() {
+  // Calculate the new scroll position
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  // Update the SVG rotation based on scroll position
+  rotatingElement.style.transform = `rotate(${scrollTop / 10}deg)`;
+});
+</script>
+<body>

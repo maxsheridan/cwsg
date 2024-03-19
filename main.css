@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+    overscroll-behavior: none;
+}
+
+html {
+    font-size: 16px;
+    cursor: url(/assets/graphics/smiley_point.svg), auto;
+}
+
+html a:hover {
+    cursor: url(/assets/graphics/smiley_hover.svg), auto;
+}
+
+body { 
+    background: #FFFEFC;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    margin: 0;
+    padding: 0;
+}   
+
+@font-face {
+    font-family: 'ABC Diatype';
+    src: url('/assets/type/ABC_Diatype.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Diatype Medium';
+    src: url('/assets/type/ABC_Diatype_Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Diatype Semi-Mono';
+    src: url('/assets/type/ABC_Diatype_Semi-Mono.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+h4 {
+    font-family: 'ABC Diatype Semi-Mono', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #111;
+    margin: 0;
+}
+
+p {
+    font-family: 'ABC Diatype', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5; 
+    color: #111;
+    margin: 0 0 1rem 0;
+}
+
+h2 {
+    display: inline;
+    font-family: 'ABC Diatype Semi-Mono', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #111;
+    margin: 0;
+    box-shadow: inset 0px -12px 0px pink;
+}
+
+h3 {
+    font-family: 'ABC Diatype Medium', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #111;
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+h1 {
+    font-family: 'ABC Diatype Medium', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 1.3;
+    color: #111;
+    margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+    h4 {font-size: .9rem;
+    }
+
+    p {
+        font-size: 1.05rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+    
+    h1 {
+        font-size: 1.7rem;
+    }
+}
+
+b,
+strong {
+    font-family: 'ABC Diatype Medium';
+    font-weight: 500;
+}
+
+a {
+    color: #111;
+	box-shadow: inset 0px -8px 0px pink;
+    text-decoration: none;
+}
+
+sup  {
+	box-shadow: inset 0px -8px 0px pink;
+}
+
+.page {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    padding: 3rem 0;
+    border-bottom: 5px solid #111;
+}
+
+section:first-child {
+    padding-top: 0;
+}
+
+section:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: none;
+}
+
+.cover {
+    flex: 1;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    background: no-repeat center center; 
+    background-size: cover;
+    background-color: #333;
+}
+
+.text-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 3rem 1.5rem;
+    max-width: 47.5rem;
+    margin: 0 auto;
+}
+
+.text-overlay {
+    * {
+        color: pink;
+    }
+}
+
+.text-overlay p.credits {
+    font-family: 'ABC Diatype Semi-Mono';
+}
+
+.text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    background: rgb(255, 248, 249);
+}
+
+.text-wrapper {
+    max-width: 47.5rem;
+    padding: 3rem 1.5rem;
+}
+
+.notes {
+    border-top: double #111;
+    padding: 1.5rem 0 0 0;
+    margin: 2rem 0 0;
+}
+
+hr {
+    background: #111;
+    border: 0;
+    height: 5px;
+    display: block;
+}
+
+
+/*Mobile*/
+
+@media (max-width: 768px) {
+    .page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cover {
+        display: flex;
+        border-right: none;
+        border-bottom: 5px solid #111;
+    }
+}
+
+/*——Classes*/
+
+.coda {
+    text-align: center;
+    color: #111;
+    padding: 4rem 0 2rem 0;
+}
+
+@media screen and (max-width: 768px) {
+    .coda img {
+        height: 36px;
+        width: 25px;
+    }
+}
