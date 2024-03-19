@@ -222,6 +222,7 @@ hr {
     }
 
     .cover {
+        position: unset;
         display: flex;
         border-right: none;
         border-bottom: 5px solid #111;
