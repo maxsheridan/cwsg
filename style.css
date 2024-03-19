@@ -239,9 +239,9 @@ hr {
 		flex-direction: column;
 
     .cover {
+		position: unset;
         height: 100vh;
         border-right: none;
-		overflow: auto;
     }
 	
 	.show {
