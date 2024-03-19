@@ -242,6 +242,7 @@ hr {
     .cover {
         position: absolute;
         display: flex;
+		top: 0;
 		height: 100vh;
         border-right: none;
         border-bottom: 5px solid #111;
