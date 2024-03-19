@@ -240,12 +240,9 @@ hr {
     }
 
     .cover {
-        position: absolute;
         display: flex;
-		top: 0;
-		height: 100vh;
+		flex: 1;
         border-right: none;
-        border-bottom: 5px solid #111;
     }
 	
 	.show {
