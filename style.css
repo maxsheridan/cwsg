@@ -216,7 +216,7 @@ hr {
 
 /*Mobile*/
 
-@media (max-width: 768px) {
+@media (max-width: 940px) {
     .page {
         display: flex;
         flex-direction: column;
