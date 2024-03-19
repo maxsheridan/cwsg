@@ -201,6 +201,12 @@ section:last-child {
     font-family: 'ABC Diatype Semi-Mono';
 }
 
+@media only screen and (min-width: 941px) {
+	.arrow {
+		display: none;
+	}
+}
+
 .text {
     flex: 1;
     display: flex;
