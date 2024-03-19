@@ -20,25 +20,6 @@
         <meta property="og:image" content="https://maxcopy.co/assets/graphics/mc_share.webp">
         <meta property="og:image:type" content="image/webp">
         <meta property="og:image:width" content="720">
-        <meta property="og:image:height" content="720">
-		<script>
-		  const header = document.querySelector('.header');
-		  let lastScrollTop = 0;
-		
-		  window.addEventListener('scroll', () => {
-		    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-		    
-		    if (currentScroll > lastScrollTop) {
-		      // Scroll down
-		      header.classList.remove('show');
-		    } else {
-		      // Scroll up
-		      header.classList.add('show');
-		    }
-		    
-		    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
-		  });
-		</script>
     </head>
     <body>
         <main>
@@ -315,5 +296,25 @@
 				</div>
 			</div>	
 		</main>
+	<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const header = document.querySelector('.header');
+    let lastScrollTop = 0;
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+      
+      if (currentScroll > lastScrollTop) {
+        // Scroll down
+        header.classList.remove('show');
+      } else {
+        // Scroll up
+        header.classList.add('show');
+      }
+      
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+    });
+  });
+</script>
 	</body>
 </html>
