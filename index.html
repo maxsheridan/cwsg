@@ -9,8 +9,9 @@
 		<link rel="preload" href="/assets/type/ABC_Diatype_Semi-Mono.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="preload" href="/assets/graphics/smiley_hover.svg" as="image">
         <title>CWSG - Max Sheridan</title>
+		<script src="dropdown_header.js" defer></script>
         <link rel="stylesheet" href="/style.css">
-        <link rel="icon" type="image/x-icon" href="/assets/graphics/mc_favicon.ico">
+		<link rel="icon" type="image/x-icon" href="/assets/graphics/mc_favicon.ico">
         <link rel="canonical" href="https://cwsg.maxcopy.co">
         <meta name="description" content="Ten professional tips for writing better, story-driven content.">
         <meta property="og:site_name" content="/">
@@ -20,11 +21,13 @@
         <meta property="og:image" content="https://maxcopy.co/assets/graphics/mc_share.webp">
         <meta property="og:image:type" content="image/webp">
         <meta property="og:image:width" content="720">
-        <meta property="og:image:height" content="720">
     </head>
     <body>
         <main>
 			<div id="cwsg" class="page">
+				<header class="header">
+					<p>Content Writer’s Survival Guide</p>
+				</header>
 				<div class="cover">
 					<div class="text-overlay">
 						<div class="svg-container" style="text-align: center; margin-bottom: 1.5rem;">
@@ -46,7 +49,7 @@
 							Design by Tug Wells<br>
 							Illustration by Stanislav Levin<br>
 							Created and hosted on GitHub
-						</p>    
+						</p> 
 					</div>
 				</div> 
 				<div class="text">
@@ -294,5 +297,34 @@
 				</div>
 			</div>	
 		</main>
+	<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const header = document.querySelector('.header');
+    const cover = document.querySelector('.cover');
+    const text = document.querySelector('.text');
+    let lastScrollTop = 0;
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+      const screenWidth = window.innerWidth;
+
+      if (screenWidth < 940 && currentScroll > cover.clientHeight) {
+        // Mobile view and scrolled past the cover
+        if (currentScroll > lastScrollTop) {
+          // Scroll down
+          header.classList.remove('show');
+        } else {
+          // Scroll up
+          header.classList.add('show');
+        }
+      } else {
+        // Desktop view or not scrolled past the cover
+        header.classList.remove('show');
+      }
+      
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+    });
+  });
+</script>
 	</body>
 </html>
