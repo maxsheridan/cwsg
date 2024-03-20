@@ -68,6 +68,11 @@ p {
     margin: 0 0 1rem 0;
 }
 
+.text-overlay p.credits {
+    font-family: 'ABC Diatype Semi-Mono';
+	font-size: 1.2rem;
+}
+
 h2 {
     display: inline;
     font-family: 'ABC Diatype Semi-Mono', sans-serif;
@@ -103,6 +108,10 @@ h1 {
 
     p {
         font-size: 1.1rem;
+    }
+
+    .text-overlay p.credits {
+        font-size: 1.05;
     }
 
     h2 {
@@ -197,11 +206,6 @@ section:last-child {
     * {
         color: pink;
     }
-}
-
-.text-overlay p.credits {
-    font-family: 'ABC Diatype Semi-Mono';
-	font-size: 1.2rem;
 }
 
 .text {
