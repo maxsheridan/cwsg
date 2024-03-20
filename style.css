@@ -68,7 +68,7 @@ p {
     margin: 0 0 1rem 0;
 }
 
-.text-overlay p.credits {
+p.credits {
     font-family: 'ABC Diatype Semi-Mono';
 	font-size: 1.2rem;
 }
@@ -110,7 +110,7 @@ h1 {
         font-size: 1.1rem;
     }
 
-    .text-overlay p.credits {
+    p.credits {
         font-size: 1.05rem;
     }
 
