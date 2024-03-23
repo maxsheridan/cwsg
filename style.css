@@ -153,7 +153,7 @@ sup  {
 	background-color: #333333;
 	transition: transform 0.1s ease-in-out; 
 	transform: translateY(-100%);
-  }
+}
 
 .header p {
 	color: pink;
@@ -252,7 +252,7 @@ hr {
 	
 	.show {
     	transform: translateY(0); /* Show the header */
-  	}
+    }
 }
 
 /*——Classes*/
