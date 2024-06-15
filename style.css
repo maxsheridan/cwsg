@@ -41,15 +41,16 @@ html a:hover {
 body { 
     background: #FFFEFC;
     margin: 0;
-    -webkit-text-size-adjust: none;
-    -moz-text-size-adjust: none;
     -ms-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
     text-size-adjust: none;
 }   
 
 .page {
     display: flex;
-    height: 100%;
+    min-height: 100dvh;
+    min-height: 100vh;
 }
 
 section {
@@ -73,8 +74,8 @@ section:last-child {
     flex: 1;
     position: sticky;
     top: 0;
-    height: 100vh;
     height: 100dvh;
+    height: 100vh;
     background-color: #222;
 }
 
@@ -139,8 +140,8 @@ h2 {
     font-weight: 400;
     line-height: 1.4;
     color: #111;
-    margin: 0;
     box-shadow: inset 0px -12px 0px #FFC0CB;
+    margin: 0;
 }
 
 h3 {
@@ -186,8 +187,8 @@ a,sup {
 }
 
 .header p {
+    line-height: 3rem;
 	color: pink;
-	line-height: 3rem;
 	margin: 0;
 }
 
