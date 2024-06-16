@@ -213,7 +213,7 @@ svg.arrow-right {
 
 /*Mobile layout + styles*/
 
-.header {
+header {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -225,7 +225,7 @@ svg.arrow-right {
 	transform: translateY(-100%);
 }
 
-.header p {
+header p {
     line-height: 3rem;
 	color: pink;
 	margin: 0;
