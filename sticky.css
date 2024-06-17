@@ -49,8 +49,8 @@ body {
 
 .page {
     display: flex;
-    min-height: 100dvh;
     min-height: 100vh;
+    min-height: 100dvh;
 }
 
 section {
@@ -74,8 +74,8 @@ section:last-child {
     flex: 1;
     position: sticky;
     top: 0;
-    height: 100dvh;
     height: 100vh;
+    height: 100dvh;
     background-color: #222;
 }
 
