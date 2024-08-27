@@ -44,7 +44,7 @@ html {
     font-size: 16px;
 }    
 
-.text:hover {
+.text:hover, .text a:hover {
     cursor: url('/assets/graphics/cursor-dark.svg') 5 -5, auto;
 }
 
