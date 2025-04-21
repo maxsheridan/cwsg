@@ -23,15 +23,21 @@
     --gap: 1.25rem;
     --medium-gap: 1.75rem;
     --big-gap: 3rem;
-    --body-font: 'ABC Diatype',  Helvetica,  Arial,  sans-serif;
-    --heading-font: 'ABC Diatype Medium',  Helvetica,  Arial,  sans-serif;
-    --subheading-font: 'ABC Diatype Semi-Mono',  Helvetica,  Arial,  sans-serif;
-    --primary-color: #111;
+    --body-font: 'ABC Diatype',sans-serif,system-ui;
+    --heading-font: 'ABC Diatype Medium',sans-serif,system-ui;
+    --subheading-font: 'ABC Diatype Semi-Mono',sans-serif,system-ui;
+    --primary-color: #222;
     --secondary-color: pink;
     --tertiary-color: lightseagreen;
-    --background-color: #FFF8F9;
+    --background-color: #FBFAF7;
     --cover-background-color: #222;
 }
+
+:focus-visible {
+    outline: 3px solid lightseagreen;
+    outline-offset: 2px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -49,7 +55,7 @@
 ;}
 
 .margins-off * {
-    margin: 0;
+    margin-block-start: 0;
 }
 
 html {
